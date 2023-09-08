@@ -6,6 +6,7 @@ public class ConsoleInputOutput implements InputOutput {
 		reader = new BufferedReader(new InputStreamReader(System.in));
 	}
 
+	
 	@Override
 	public String readString(String prompt) {
 		writeLine(prompt);
