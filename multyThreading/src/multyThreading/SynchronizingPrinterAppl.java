@@ -29,9 +29,7 @@ private static final int N_POSITION = 5;
 			
 		}
 		
-		printers[printers.length-1] =  new SynchronizingPrinter(N_POSITION, N_NUMBERS, 
-				printers.length, printers[0]);
-		
+		printers[printers.length-1].printerNext = printers[0]; 
 		printers[printers.length-1].start();
 		
 		
