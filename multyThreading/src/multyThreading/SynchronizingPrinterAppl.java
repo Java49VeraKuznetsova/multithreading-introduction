@@ -8,7 +8,7 @@ private static final int N_POSITION = 5;
 
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 
 		SynchronizingPrinter [] printers = new SynchronizingPrinter [N_PRINTERS];
 		printers = createPrinters(printers);
@@ -17,7 +17,7 @@ private static final int N_POSITION = 5;
 	}
 	
 	private static SynchronizingPrinter[] createPrinters(SynchronizingPrinter [] printers) {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		
 		printers[0] = new SynchronizingPrinter(N_POSITION, N_NUMBERS, 1, null);
 		for(int i = 1; i<printers.length; i++) {

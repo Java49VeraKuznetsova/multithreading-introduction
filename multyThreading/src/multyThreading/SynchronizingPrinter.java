@@ -22,8 +22,7 @@ public class SynchronizingPrinter extends Thread{
 	@Override
 	public void run() {
 		int index = 0;
-		//int n_portion = N_NUMBERS/N_POSITION;
-		
+				
 		while (index < N_POSITION) {
 			
 			try {
