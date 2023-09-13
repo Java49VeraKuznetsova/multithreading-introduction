@@ -16,11 +16,11 @@ public class KolhozAppl {
 		Instant start = Instant.now();
 		startTrucks(trucks);
 		joinTrucks(trucks);
-		dispplayResults(start);
+		displayResults(start);
 
 	}
 
-	private static void dispplayResults(Instant start) {
+	private static void displayResults(Instant start) {
 		System.out.printf("number of trucks is %d;"
 				+ "number of loads is %d;\n" 
 				+ "one load is %d tons\n"
