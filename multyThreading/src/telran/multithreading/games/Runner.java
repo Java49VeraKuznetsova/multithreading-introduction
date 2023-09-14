@@ -1,8 +1,11 @@
 package telran.multithreading.games;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Runner extends Thread {
 private Race race;
 private int runnerId;
+private static AtomicInteger winnerID = new AtomicInteger(0);
 public Runner(Race race, int runnerId) {
 	this.race = race;
 	this.runnerId = runnerId;
@@ -20,6 +23,9 @@ public void run() {
 		}
 		System.out.println(runnerId);
 	}
-	race.setWinner(runnerId);
+	winnerID.set(runnerId);
+	race.setWinner(winnerID.get());
+	
+	//race.setWinner(runnerId);
 }
 }
