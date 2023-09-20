@@ -2,7 +2,7 @@ package telran.multithreading;
 
 public class FakeDeadLock {
 
-	
+	//MY CODE
 	private static final int PARAM = 10;
 	private static Object mutex1 = new Object();
 	private static Object mutex2 = new Object();
