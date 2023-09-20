@@ -63,23 +63,3 @@ public class RaceAppl {
 	}
 
 }
-	private static void joinRunners(Runner[] runners) {
-		IntStream.range(0, runners.length).forEach(i -> {
-			try {
-				runners[i].join();
-			} catch (InterruptedException e) {
-				throw new IllegalStateException();
-			}
-		});
-		
-	}
-
-	private static void startRunners(Runner[] runners, Race race) {
-		IntStream.range(0, runners.length).forEach(i -> {
-			runners[i] = new Runner(race, i + 1);
-			runners[i].start();
-		});
-		
-	}
-
-}
