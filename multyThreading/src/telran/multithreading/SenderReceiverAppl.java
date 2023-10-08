@@ -15,7 +15,7 @@ public class SenderReceiverAppl {
 		sender.start();
 		Receiver[] receivers = new Receiver[N_RECEIVERS];
 		startReceivers(messageBox, receivers);
-		//Thread.sleep(200);
+	
 		sender.join();
 		stopReceivers(receivers);
 
